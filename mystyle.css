@@ -1,0 +1,688 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+
+
+h1 {
+  font: font-monospace;
+ 
+}
+
+h2 {
+  font: font-monospace;
+
+  }
+
+  h3 {
+    font: font-monospace;
+    }
+    h4 {
+      font: font-monospace;
+      }
+
+      p {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(10, end), blink-caret 0.15s step-end infinite;
+  font-family: monospace;
+  font-size: 20px;
+  
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* //Navbar */
+
+body {
+  font-family: cursive;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+ 
+}
+.nav-links a {
+  color:black
+}
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 17px;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+
+
+
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.typewriter1 h2 {
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-family: monospace;
+  
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+.container-icons {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.container-icons .devicon,
+.container-icons .fab,
+.container-icons .fas {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.container-icons .box-icon {
+  height: 142px;
+  margin-bottom: 10px;
+}
+
+.container-icons .box-icon p {
+  color: #656565;
+}
+
+.container-icons .box-icon .fa-js,
+.container-icons .box-icon .fa-cogs,
+.container-icons .box-icon .fa-terminal,
+.container-icons .box-icon .fa-adobe,
+.container-icons .box-icon .i-firebase {
+  height: 72px;
+}
+
+.container-icons .box-icon .i-firebase {
+  width: 58px;
+}
+
+.container-icons .box-icon .i-responsive {
+  width: 70px;
+}
+
+.container-icons .box-icon .i-w3c {
+  width: 91px;
+  min-width: 91px;
+}
+
+@media (min-width: 576px) {
+  .container-icons .box-icon {
+    width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-icons .box-icon {
+    width: 12.5%;
+  }
+}
+
+.container-icons .container-img-i {
+  display: block;
+  width: 50%;
+  height: 3.5rem;
+  margin: 0 auto;
+}
+
+.container-flip {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+}
+
+.container-flip span {
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-animation: rotate-word 20s linear infinite;
+  animation: rotate-word 20s linear infinite;
+}
+
+.container-flip span:nth-child(2) {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.container-flip span:nth-child(3) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.container-flip span:nth-child(4) {
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+}
+
+.container-flip span:nth-child(5) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.container-flip span:nth-child(6) {
+  -webkit-animation-delay: 12.5s;
+  animation-delay: 12.5s;
+}
+
+.container-flip span:nth-child(7) {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+.container-flip span:nth-child(8) {
+  -webkit-animation-delay: 17.5s;
+  animation-delay: 17.5s;
+}
+@-webkit-keyframes rotate-word {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  4% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  19% {
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-word {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  4% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  19% {
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.flip {
+  width: 100%;
+}
+
+.flip::after {
+  content: "";
+  display: inline-block;
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.clip-me:after {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );
+  position: absolute; /* absolute or fixed positioning required */
+  content: "";
+  clip-path: polygon(50% 50%, 100% 0, 0 0);
+  -webkit-clip-path: polygon(50% 50%, 100% 0, 0 0);
+  height: 180px;
+  width: 100%;
+}
+
+.skills-tools {
+  background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
+
+}
+
+
+.angle::after {
+  content: "";
+  position: absolute;
+}
+
+a.u-line ::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: blue;
+}
+
+.clip-me2:after {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );
+  position: absolute; /* absolute or fixed positioning required */
+  content: "";
+  clip-path: polygon(0 0, 100% 0, 25% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+  height: 100px;
+  width: 100%;
+}
+
+.clip-me3:after {
+  background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% ); 
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+  position: absolute; /* absolute or fixed positioning required */
+  content: "";
+  height: 80px;
+  width: 100%;
+}
+
+
+
+.clip-me4:after {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(235,131,130,1) 0%, rgba(235,131,130,0.75) 38.6%, rgba(211,177,125,0.52) 72.1%, rgba(211,177,125,0.24) 94.7% );
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
+  position: absolute; /* absolute or fixed positioning required */
+  content: "";
+  height: 100px;
+  width: 100%;
+}
+
+.clip-me5:after {
+  background: rgb(2,0,36);
+  background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 0 0);
+  position: absolute; /* absolute or fixed positioning required */
+  content: "";
+  height: 50px;
+  width: 100%;
+}
+
+section.contact form {
+  margin-bottom: 50px;
+}
+
+section.contact form .field {
+  margin-bottom: -10px;
+}
+
+section.contact form label,
+section.contact form input,
+section.contact form textarea {
+  border: 2px solid rgba(72, 216, 164, 0);
+  width: 100%;
+  display: block;
+  padding: 1.2rem 0.6rem 0.4rem;
+}
+
+section.contact form label::-webkit-input-placeholder,
+section.contact form input::-webkit-input-placeholder,
+section.contact form textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+section.contact form label:-ms-input-placeholder,
+section.contact form input:-ms-input-placeholder,
+section.contact form textarea:-ms-input-placeholder {
+  color: white;
+}
+
+section.contact form label::-ms-input-placeholder,
+section.contact form input::-ms-input-placeholder,
+section.contact form textarea::-ms-input-placeholder {
+  color: white;
+}
+
+section.contact form label::placeholder,
+section.contact form input::placeholder,
+section.contact form textarea::placeholder {
+  color: white;
+}
+
+section.contact form label:required,
+section.contact form input:required,
+section.contact form textarea:required {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+section.contact form label:required:invalid,
+section.contact form input:required:invalid,
+section.contact form textarea:required:invalid {
+  -webkit-box-shadow: 2px 2px #0eb0c3;
+  box-shadow: 2px 2px #27cbde;
+}
+
+section.contact form textarea {
+  resize: none;
+  height: 150px;
+}
+
+section.contact form label {
+  pointer-events: none;
+  height: 26px;
+  color: #727272;
+  -webkit-transform: translateY(-67px);
+  transform: translateY(-67px);
+  -webkit-transition: color 0.2s ease, font-size 0.2s ease,
+    -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, font-size 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, font-size 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, font-size 0.2s ease,
+    -webkit-transform 0.2s ease;
+}
+
+section.contact form label.message {
+  -webkit-transform: translateY(-156px);
+  transform: translateY(-156px);
+}
+
+section.contact form label .required {
+  color: #f0535d;
+}
+
+section.contact form input:focus,
+section.contact form textarea:focus {
+  border: 2px solid #48d8a4;
+}
+
+section.contact form input:focus::-webkit-input-placeholder,
+section.contact form textarea:focus::-webkit-input-placeholder {
+  color: #3f3f3f;
+}
+
+section.contact form input:focus:-ms-input-placeholder,
+section.contact form textarea:focus:-ms-input-placeholder {
+  color: #3f3f3f;
+}
+
+section.contact form input:focus::-ms-input-placeholder,
+section.contact form textarea:focus::-ms-input-placeholder {
+  color: #3f3f3f;
+}
+
+section.contact form input:focus::placeholder,
+section.contact form textarea:focus::placeholder {
+  color: #3f3f3f;
+}
+
+section.contact form input:focus ~ label,
+section.contact form input:valid ~ label,
+section.contact form textarea:focus ~ label,
+section.contact form textarea:valid ~ label {
+  font-size: 0.7rem;
+  color: #48d8a4;
+}
+
+section.contact form input:focus ~ label,
+section.contact form input:valid ~ label {
+  -webkit-transform: translateY(-80px);
+  transform: translateY(-80px);
+}
+
+section.contact form textarea:focus ~ label,
+section.contact form textarea:valid ~ label {
+  -webkit-transform: translateY(-168px);
+  transform: translateY(-168px);
+}
+
+.container-social-i {
+  max-width: 500px;
+}
+
+.container-social-i ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-social-i ul a {
+  color: #394ff4;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.container-social-i ul a:hover {
+  color: #f0535d;
+  background-color: transparent;
+}
+
+.container-social-i ul li {
+  width: 50px;
+  height: 50px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  list-style: none;
+}
+
+.container-social-i ul li:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.container-social-i ul svg {
+  width: 20px;
+  height: 20px;
+  fill: #394ff4;
+}
+
+.container-social-i ul svg:hover {
+  fill: #f0535d;
+}
+
+
+.btn span {
+  top: 25px;
+  position: relative;
+  right: 0;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.btn:hover {
+  color: gold;
+  background-color:violet ;
+  border-color: white ;
+}
+
