@@ -30,6 +30,4 @@ Thank you to thr whole team of bootcampspot for organising the front-end develop
 
 ## Screenshot
 
-![FireShot Pro Webpage Screenshot #001 - 'Bootstrap demo' - aartimehar github io](https://user-images.githubusercontent.com/113493756/210465565-c68304e3-4d66-492a-8e1d-7abd9f3f6f61.png)
-
-
+![FireShot Pro Webpage Screenshot #005 - 'Bootstrap demo' - aartimehar github io](https://user-images.githubusercontent.com/113493756/210466964-f79eb036-8d7d-476a-be76-1b05aeb8af54.png)
