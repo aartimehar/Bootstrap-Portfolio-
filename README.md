@@ -16,6 +16,11 @@ The following steps I have taken to design my website :
 - Using a Type writer animation on the Nav bar 
 - Using a rotating word animation in the Jumbotron.
 
+## Deployed Link 
+
+https://aartimehar.github.io/Bootstrap-Portfolio-/
+
+
 ## Installation 
 
 NA
