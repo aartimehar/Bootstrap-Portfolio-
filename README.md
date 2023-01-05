@@ -8,7 +8,7 @@ The following steps I have taken to design my website :
 
 - Using Grid system from the with Bootstrap values.
 - Maximizing writing CSS values in HTML
-- Include links that are applicable to your portfolio
+- Include links that are applicable to my portfolio
 - Links  navigate to the appropriate sections
 - A jumbotron featuring my picture,my  name, and any other information.
 - A section displaying my work in grid.
@@ -25,7 +25,7 @@ https://aartimehar.github.io/Bootstrap-Portfolio-/
 
 NA
 
-#Usage
+# Usage
 
 To use this website you can click on the displayed links to navigate the sections.
 
